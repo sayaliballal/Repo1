@@ -1,5 +1,7 @@
 package Webpages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,8 +9,6 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
 	
 	private static WebElement element = null;
-			
-	
 	
 	public static WebElement loginpage_username(WebDriver driver) {
 		
@@ -50,18 +50,19 @@ public class LoginPage {
 	
 	public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
 	
-		//element = driver.findElement(By.xpath("//label[@for='chkdtexhibittitle']"));
-		element = driver.findElement(By.xpath("//input[@id='chkdtexhibittitle']"));
-		//element = driver.findElement(By.cssSelector("div.container:nth-child(4) div.demo-list:nth-child(8) div.panel-group div.panel.panel-default:nth-child(1)"));
-		
+		element = driver.findElement(By.xpath("//label[@for='chkdtexhibittitle']"));
 		return element;
 	}
 	
+	/*public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
+		List<WebElement> checkbox = driver.findElements(By.id("chkdtexhibittitle"));
+		((WebElement) checkbox.get(0)).click();
+		return element;
+	}*/
 	
+		
 	public static WebElement selectregister_continuebtn(WebDriver driver) {
-		element = driver.findElement(By.xpath("//button[@id='disp_type_btn']"));
-		//element = driver.findElement(By.id("disp_type_btn")); 
-		//element = driver.findElement(By.linkText("Continue"));
+		element = driver.findElement(By.id("disp_type_btn"));
 		return element;
 	}
 	

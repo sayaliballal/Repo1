@@ -58,9 +58,7 @@ public class Test1_Loginpage {
 		
 		LoginPage.selectregisterforbook_selectcheckbox(driver).click();
 		
-		
-		//LoginPage.selectregisterforbook(driver).click();  //again click on select register tab 
-		
+				
 		LoginPage.selectregister_continuebtn(driver).click();
 		
 		
