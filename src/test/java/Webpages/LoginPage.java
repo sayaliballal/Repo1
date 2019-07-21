@@ -1,14 +1,17 @@
 package Webpages;
 
 import java.util.List;
+import javax.swing.text.Element;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage {
 	
 	private static WebElement element = null;
+	private static WebDriver checkbox;
 	
 	public static WebElement loginpage_username(WebDriver driver) {
 		
@@ -50,27 +53,30 @@ public class LoginPage {
 	
 	public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
 	
-		element = driver.findElement(By.xpath("//label[@for='chkdtexhibittitle']"));
+		//element = driver.findElement(By.xpath("//label[@for='chkdtexhibittitle']"));
+		element = driver.findElement(By.id("chkdtexhibittitle"));
 		return element;
+		
 	}
 	
-	/*public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
+	/*
+	public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
 		List<WebElement> checkbox = driver.findElements(By.id("chkdtexhibittitle"));
 		((WebElement) checkbox.get(0)).click();
 		return element;
-	}*/
-	
+	}
+	*/
 		
 	public static WebElement selectregister_continuebtn(WebDriver driver) {
 		element = driver.findElement(By.id("disp_type_btn"));
 		return element;
 	}
 	
-	
-	/*public static WebElement select_packages_shows(WebDriver driver) {
+	public static WebElement select_packages_shows(WebDriver driver)
+	{
 		element = driver.findElement(By.id("panelcollapseTwo"));
 		try {
-            Thread.sleep(5000);
+            Thread.sleep(8000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -78,7 +84,7 @@ public class LoginPage {
 
 		return element;
 		
-	  }    */
+	  } 
 	
 
 	
@@ -88,5 +94,5 @@ public class LoginPage {
 	}
 	*/
 
-
 }
+

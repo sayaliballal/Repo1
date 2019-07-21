@@ -6,48 +6,32 @@ import java.sql.Time;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import Webpages.LoginPage;
 
 
 
-public class Test1_Loginpage {
+public class Test2 {
 	
-	private static WebDriver driver = null;
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		loginpage();
-
-	}
+	WebDriver driver = null;
 	
-	public static void 	loginpage() {
+	@BeforeTest
+public void setUpTest(){
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
-		
-			
-		//go to combined book exhibit
 		driver.get("https://alpha.combinedbook.com/");
-		
-		//To maximize the window
-		//driver.manage().window().maximize();
-		
-		//enter text in user name field
-		//driver.findElement(By.id("txt_username")).sendKeys("cbetest1@gmail.com");
+	}
+	
+	@Test
+public void loginpage() {
 		
 		LoginPage.loginpage_username(driver).sendKeys("cbetest1@gmail.com");
 		
-		
-		//enter text in password field
-		//driver.findElement(By.id("txt_password")).sendKeys("123456789");
-		
 		LoginPage.loginpage_password(driver).sendKeys("123456789");
-		
-		//click on login button
-		//driver.findElement(By.id("btn_sub")).click();
-		//driver.findElement(By.id("btn_sub")).sendKeys(Keys.RETURN);
 		
 		LoginPage.loginpage_loginbtn(driver).sendKeys(Keys.RETURN);
 		
@@ -55,15 +39,20 @@ public class Test1_Loginpage {
 		
 		LoginPage.selectregisterforbook(driver).click();
 		
-		//LoginPage.selectregisterforbook_selectcheckbox(driver).click();
+		LoginPage.selectregisterforbook_selectcheckbox(driver).click();
 							
 		LoginPage.selectregister_continuebtn(driver).click();
-	
 		
         LoginPage.select_packages_shows(driver).click();
-            
-		//LoginPage.show_checkbox(driver).click();
-		
+            	
 	}
+	
+	@AfterTest
+public void tearDownTest() {
+		
+		driver.close();
+		driver.quit();
+		System.out.println("Test Completed Successfully");
+	}	
 
 }
