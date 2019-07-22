@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27356" started-at="2019-07-21T11:10:31Z" finished-at="2019-07-21T11:10:59Z">
+  <suite name="Default suite" duration-ms="54724" started-at="2019-07-22T12:43:17Z" finished-at="2019-07-22T12:44:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27356" started-at="2019-07-21T11:10:31Z" finished-at="2019-07-21T11:10:59Z">
+    <test name="Default test" duration-ms="54724" started-at="2019-07-22T12:43:17Z" finished-at="2019-07-22T12:44:12Z">
       <class name="Test.Test2">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Test.Test2@66a3ffec]" name="setUpTest" is-config="true" duration-ms="8361" started-at="2019-07-21T11:10:31Z" finished-at="2019-07-21T11:10:40Z">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Test.Test2@66a3ffec]" name="setUpTest" is-config="true" duration-ms="11245" started-at="2019-07-22T12:43:17Z" finished-at="2019-07-22T12:43:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="FAIL" signature="loginpage()[pri:0, instance:Test.Test2@66a3ffec]" name="loginpage" duration-ms="18223" started-at="2019-07-21T11:10:40Z" finished-at="2019-07-21T11:10:58Z">
+        <test-method status="FAIL" signature="loginpage()[pri:0, instance:Test.Test2@66a3ffec]" name="loginpage" duration-ms="43455" started-at="2019-07-22T12:43:29Z" finished-at="2019-07-22T12:44:12Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input type="checkbox" name="chkdtexhibittitle" id="chkdtexhibittitle" value="006" class="displayTypeAddon" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"> is not clickable at point (104, 91). Other element would receive the click: <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+              <![CDATA[element click intercepted: Element <input type="radio" name="titleType[651]" id="mreg_651_print_title" value="print" class="rdo_show_member" data-sid="651" style="position: absolute; opacity: 0;"> is not clickable at point (291, 197). Other element would receive the click: <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
   (Session info: chrome=75.0.3770.142)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PS794016', ip: '192.168.3.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 25b71a60a29c158fa6eb127de86621ec]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe26c964121094d5069af1557476f16d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" name="chkdtexhibittitle" id="chkdtexhibittitle" value="006" class="displayTypeAddon" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"> is not clickable at point (104, 91). Other element would receive the click: <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="radio" name="titleType[651]" id="mreg_651_print_title" value="print" class="rdo_show_member" data-sid="651" style="position: absolute; opacity: 0;"> is not clickable at point (291, 197). Other element would receive the click: <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
   (Session info: chrome=75.0.3770.142)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PS794016', ip: '192.168.3.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 25b71a60a29c158fa6eb127de86621ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe26c964121094d5069af1557476f16d
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -42,7 +42,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at Test.Test2.loginpage(Test2.java:42)
+at Webpages.LoginPage.show_checkbox(LoginPage.java:122)
+at Test.Test2.loginpage(Test2.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -74,7 +75,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Test.Test2@66a3ffec]" name="tearDownTest" is-config="true" duration-ms="753" started-at="2019-07-21T11:10:58Z" finished-at="2019-07-21T11:10:59Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Test.Test2@66a3ffec]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2019-07-22T12:44:12Z" finished-at="2019-07-22T12:44:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->

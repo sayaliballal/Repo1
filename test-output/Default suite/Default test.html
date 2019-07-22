@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 21 16:40:31 IST 2019</td>
+<td>Started on:</td><td>Mon Jul 22 18:13:17 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27356 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54724 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Test.Test2.loginpage()'><b>loginpage</b><br>Test class: Test.Test2</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;chkdtexhibittitle&quot; id=&quot;chkdtexhibittitle&quot; value=&quot;006&quot; class=&quot;displayTypeAddon&quot; style=&quot;position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;&quot;&gt; is not clickable at point (104, 91). Other element would receive the click: &lt;ins class=&quot;iCheck-helper&quot; style=&quot;position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;&quot;&gt;&lt;/ins&gt;
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;radio&quot; name=&quot;titleType[651]&quot; id=&quot;mreg_651_print_title&quot; value=&quot;print&quot; class=&quot;rdo_show_member&quot; data-sid=&quot;651&quot; style=&quot;position: absolute; opacity: 0;&quot;&gt; is not clickable at point (291, 197). Other element would receive the click: &lt;ins class=&quot;iCheck-helper&quot; style=&quot;position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;&quot;&gt;&lt;/ins&gt;
   (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PS794016&apos;, ip: &apos;192.168.3.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 25b71a60a29c158fa6eb127de86621ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe26c964121094d5069af1557476f16d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -95,7 +95,8 @@ Session ID: 25b71a60a29c158fa6eb127de86621ec
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at Test.Test2.loginpage(Test2.java:42)
+	at Webpages.LoginPage.show_checkbox(LoginPage.java:122)
+	at Test.Test2.loginpage(Test2.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,14 +122,14 @@ Session ID: 25b71a60a29c158fa6eb127de86621ec
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1323434987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1323434987'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;chkdtexhibittitle&quot; id=&quot;chkdtexhibittitle&quot; value=&quot;006&quot; class=&quot;displayTypeAddon&quot; style=&quot;position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;&quot;&gt; is not clickable at point (104, 91). Other element would receive the click: &lt;ins class=&quot;iCheck-helper&quot; style=&quot;position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;&quot;&gt;&lt;/ins&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace412111214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace412111214'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;radio&quot; name=&quot;titleType[651]&quot; id=&quot;mreg_651_print_title&quot; value=&quot;print&quot; class=&quot;rdo_show_member&quot; data-sid=&quot;651&quot; style=&quot;position: absolute; opacity: 0;&quot;&gt; is not clickable at point (291, 197). Other element would receive the click: &lt;ins class=&quot;iCheck-helper&quot; style=&quot;position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;&quot;&gt;&lt;/ins&gt;
   (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PS794016&apos;, ip: &apos;192.168.3.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 25b71a60a29c158fa6eb127de86621ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe26c964121094d5069af1557476f16d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -141,7 +142,8 @@ Session ID: 25b71a60a29c158fa6eb127de86621ec
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at Test.Test2.loginpage(Test2.java:42)
+	at Webpages.LoginPage.show_checkbox(LoginPage.java:122)
+	at Test.Test2.loginpage(Test2.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -168,7 +170,7 @@ Session ID: 25b71a60a29c158fa6eb127de86621ec
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>18</td>
+<td>43</td>
 <td>Test.Test2@66a3ffec</td></tr>
 </table><p>
 </body>

@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import net.bytebuddy.asm.Advice.Exit;
+
 public class LoginPage {
 	
 	private static WebElement element = null;
@@ -39,60 +41,94 @@ public class LoginPage {
 		return element;
 	}
 	
+	
 	public static WebElement selectregisterforbook(WebDriver driver) {
 		element = driver.findElement(By.id("panelcollapseSix"));
-		try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
 		return element;
-	}
-	
-	public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
-	
-		//element = driver.findElement(By.xpath("//label[@for='chkdtexhibittitle']"));
-		element = driver.findElement(By.id("chkdtexhibittitle"));
-		return element;
-		
 	}
 	
 	/*
 	public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
-		List<WebElement> checkbox = driver.findElements(By.id("chkdtexhibittitle"));
-		((WebElement) checkbox.get(0)).click();
-		return element;
+	
+		element = driver.findElement(By.xpath("//label[@for='chkdtexhibittitle']"));
+		//element = driver.findElement(By.id("chkdtexhibittitle"));
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			return element;
+		}*/
+		
+	public static WebElement selectregisterforbook_selectcheckbox(WebDriver driver) {
+	        List<WebElement> checkbox = driver.findElements(By.xpath("//label[@for='chkdtexhibittitle']"));
+	        ((WebElement) checkbox.get(0)).click();
+	        
+	        try {
+				Thread.sleep(8000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();}
+					
+	        return element;	
 	}
-	*/
+	
 		
 	public static WebElement selectregister_continuebtn(WebDriver driver) {
 		element = driver.findElement(By.id("disp_type_btn"));
-		return element;
+		
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;	
 	}
+	
 	
 	public static WebElement select_packages_shows(WebDriver driver)
 	{
 		element = driver.findElement(By.id("panelcollapseTwo"));
+		
 		try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
 		return element;
 		
 	  } 
-	
 
+	public static WebElement  Pick_Individual_Shows(WebDriver driver){
 	
-	/*public static WebElement show_checkbox(WebDriver driver) {
-		driver.findElement(By.id("show_651"));
+		element = driver.findElement(By.xpath("//button[@class='blue_line pull-left btn_toggle line_sep_space']"));
+		
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
 		return element;
 	}
-	*/
-
+	
+	public static WebElement show_checkbox(WebDriver driver) {
+		//element = driver.findElement(By.id("show_651"));
+		//element = driver.findElement(By.xpath("//input[@id='show_651']"));
+		List<WebElement> checkbox = driver.findElements(By.xpath("//input[@id='mreg_651_print_title']"));
+        ((WebElement) checkbox.get(0)).click();
+		
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
 }
 
