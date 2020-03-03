@@ -99,16 +99,46 @@ public void loginpage() {
        
        LoginPage.PreviewDetailsContinueButton(driver).click();
        System.out.println("Test Completed Successfully for Preview Details Continue button");
-       
-       
+        
+      /*  
+       //********************************Payment Type_Credit Card ******************************************************* 
        LoginPage.CreditCardNumber(driver).sendKeys("4111111111111111");
        System.out.println("Test Completed Successfully entering for credit card number");
        
        LoginPage.CVV2(driver).sendKeys("123");
        System.out.println("Test Completed Successfully for entering CVV2 number");
        
-       LoginPage.ExpirationMonth(driver).click();
+       LoginPage.ExpirationMonth(driver).sendKeys("02");
        System.out.println("Test Completed Successfully for selecting expiration month");
+       
+       LoginPage.ExpirationYear(driver).sendKeys("05");
+       System.out.println("Test Completed Successfully for selecting expiration month");
+       
+      */   
+       
+     //**********************************************Payment Type_Electronic Check**********************************
+       LoginPage.ElectronicCheck(driver).click();
+       System.out.println("Test Completed Successfully for Electronic Check");
+       
+       
+       LoginPage.RoutingNumber(driver).sendKeys("123123123");
+       System.out.println("Test Completed Successfully for entering routing number");
+       
+       LoginPage.AccountNumber(driver).sendKeys("123456789");
+       System.out.println("Test Completed Successfully for entering accounting number");
+       
+       LoginPage.MakePayment(driver).click();
+       System.out.println("Test Completed Successfully on clicking Make Payment button");
+       
+        
+       //******************************************To download Packing Slip*************************************
+       /*
+       LoginPage.PackingSlip(driver).click();
+       System.out.println("Test Completed Successfully on clicking on Packing Slip");
+       */
+  
+       LoginPage.PreviousOrder(driver).click();
+       System.out.println("Test Completed Successfully for Previous Order");
        
 	}
 	 
@@ -116,8 +146,8 @@ public void loginpage() {
 public void tearDownTest() {
 		
 		
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 		System.out.println("Test Completed Successfully...");
 	}	
 

@@ -213,7 +213,8 @@ public class LoginPage{
 		
 		return element;
 	}
-	
+
+	/*//####################################### Payment Type_Credit Card ######################################### 
 	public static WebElement CreditCardNumber(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"CC_NUM\"]"));
 		try {
@@ -237,7 +238,94 @@ public class LoginPage{
 	}
 	
 	public static WebElement ExpirationMonth(WebDriver driver) {
-		element = driver.findElement(By.xpath("//*[@id=\"CC_EXPIRES\"]/option[01]"));
+		element = driver.findElement(By.xpath("//*[@id=\"CC_EXPIRES\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	
+	public static WebElement ExpirationYear(WebDriver driver) {
+		element = driver.findElement(By.xpath("/html/body/div[1]/div/form/fieldset[2]/ul/li[4]/div[2]/div[2]/select"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	*/
+		//############################################## Payment Type_Electronic Check ###########################################
+	public static WebElement ElectronicCheck(WebDriver driver) {
+		element = driver.findElement(By.xpath("/html/body/div[1]/div/form/fieldset[1]/ul/li/div/ul/li[2]/div/label/span/i"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement RoutingNumber(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"ACH_ROUTING\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	
+	public static WebElement AccountNumber(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"ACH_ACCOUNT\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	
+	public static WebElement MakePayment(WebDriver driver) {
+		element = driver.findElement(By.xpath("/html/body/div[1]/div/form/fieldset[5]/ul/li/div/input[1]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	 
+	 //################# To download Packing Slip ##################################
+	 /*
+	public static WebElement PackingSlip(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"view_order\"]/p[3]/a[1]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	*/
+	 
+	
+	public static WebElement PreviousOrder(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"my_accout_lt\"]/ul/li[7]/a"));
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -249,7 +337,6 @@ public class LoginPage{
 	
 	
 	
-		
 	}
 
 
