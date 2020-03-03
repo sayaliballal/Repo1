@@ -140,7 +140,8 @@ public void loginpage() {
        LoginPage.PreviousOrder(driver).click();
        System.out.println("Test Completed Successfully for Previous Order");
        
-	}
+       
+	} 
 	 
 	@AfterTest
 public void tearDownTest() {
