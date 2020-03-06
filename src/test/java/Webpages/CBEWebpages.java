@@ -636,11 +636,90 @@ public class CBEWebpages{
 		return element;
 	}
 	
-	//************************************************CBE Main Menu Bar*********************************************
+	//************************************************CBE Top Bar Menu*********************************************
 	
 	
+	public static WebElement AboutCBE(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Register_act\"]/header/div[1]/div/div/div[2]/a[1]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+		
+	public static WebElement Resources(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-6153\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Blog(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-6010\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement FAQs(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-5941\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Testimonials(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-6203\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Newsletter(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-5942\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Contact_Us(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-5945\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	
+	//********************************************************Main Menu***********************************************
 	public static WebElement Services(WebDriver driver) {
-		element = driver.findElement(By.xpath("//*[@id=\"Register_act\"]/header/div[2]/div/div[2]/nav/ul/li[2]/a"));
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-6147\"]/a")); 
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -651,7 +730,7 @@ public class CBEWebpages{
 	}
 	
 	public static WebElement ServicesDdlOption(WebDriver driver) {
-		element = driver.findElement(By.xpath("//*[@id=\"Register_act\"]/header/div[2]/div/div[2]/nav/ul/li[2]/ul/li[1]/a"));
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-6075\"]/a"));
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -782,8 +861,8 @@ public class CBEWebpages{
 		
 		return element;
 	}
+			
 	
-		
 	public static WebElement PDF_Catalog(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[3]/table/tbody/tr[1]/td[3]/div[3]/a"));
 		try {

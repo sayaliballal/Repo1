@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="153940" started-at="2020-03-06T11:54:08Z" finished-at="2020-03-06T11:56:42Z">
+  <suite name="Default suite" duration-ms="189719" started-at="2020-03-06T12:41:31Z" finished-at="2020-03-06T12:44:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="153940" started-at="2020-03-06T11:54:08Z" finished-at="2020-03-06T11:56:42Z">
+    <test name="Default test" duration-ms="189719" started-at="2020-03-06T12:41:31Z" finished-at="2020-03-06T12:44:40Z">
       <class name="Test.CBEMenuBarSection">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Test.CBEMenuBarSection@66a3ffec]" name="setUpTest" is-config="true" duration-ms="17701" started-at="2020-03-06T11:54:08Z" finished-at="2020-03-06T11:54:26Z">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Test.CBEMenuBarSection@66a3ffec]" name="setUpTest" is-config="true" duration-ms="15047" started-at="2020-03-06T12:41:31Z" finished-at="2020-03-06T12:41:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="FAIL" signature="CBEWebpages()[pri:0, instance:Test.CBEMenuBarSection@66a3ffec]" name="CBEWebpages" duration-ms="135456" started-at="2020-03-06T11:54:26Z" finished-at="2020-03-06T11:56:41Z">
+        <test-method status="FAIL" signature="CBEWebpages()[pri:0, instance:Test.CBEMenuBarSection@66a3ffec]" name="CBEWebpages" duration-ms="173888" started-at="2020-03-06T12:41:46Z" finished-at="2020-03-06T12:44:40Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Catalog and Reports"}
@@ -20,8 +20,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PS794016', ip: '192.168.3.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: beb7046e4f130c566bc8d19738033717
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61583dcfabe3bd2fc0fcaef19fc3023e
 *** Element info: {Using=link text, value=Catalog and Reports}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PS794016', ip: '192.168.3.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: beb7046e4f130c566bc8d19738033717
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61583dcfabe3bd2fc0fcaef19fc3023e
 *** Element info: {Using=link text, value=Catalog and Reports}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -48,8 +48,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
 at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at Webpages.CBEWebpages.CatalogAndReportsBreadcrumb(CBEWebpages.java:765)
-at Test.CBEMenuBarSection.CBEWebpages(CBEMenuBarSection.java:84)
+at Webpages.CBEWebpages.CatalogAndReportsBreadcrumb(CBEWebpages.java:842)
+at Test.CBEMenuBarSection.CBEWebpages(CBEMenuBarSection.java:107)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -81,7 +81,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CBEWebpages -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Test.CBEMenuBarSection@66a3ffec]" name="tearDownTest" is-config="true" duration-ms="732" started-at="2020-03-06T11:56:41Z" finished-at="2020-03-06T11:56:42Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Test.CBEMenuBarSection@66a3ffec]" name="tearDownTest" is-config="true" duration-ms="751" started-at="2020-03-06T12:44:40Z" finished-at="2020-03-06T12:44:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->

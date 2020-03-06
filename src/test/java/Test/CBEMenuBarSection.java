@@ -21,8 +21,31 @@ public void setUpTest()
 
 	@Test
 	public void CBEWebpages() {
+		
+		//************************************************CBE Top Bar Menu*********************************************
 
+		CBEWebpages.AboutCBE(driver).click();
+		System.out.println("Test Completed Successfully for About CBE");
+		
+		CBEWebpages.Resources(driver).click();
+		System.out.println("Test Completed Successfully for Resources");
+		
+		CBEWebpages.Blog(driver).click();
+		System.out.println("Test Completed Successfully for Blog");
+		
+		CBEWebpages.FAQs(driver).click();
+		System.out.println("Test Completed Successfully for FAQ's");
+		
+		CBEWebpages.Testimonials(driver).click();
+		System.out.println("Test Completed Successfully for Testimonials");
+		
+		CBEWebpages.Newsletter(driver).click();
+		System.out.println("Test Completed Successfully for Newsletter");
+		
+		CBEWebpages.Contact_Us(driver).click();
+		System.out.println("Test Completed Successfully for Contact Us");
 
+		//********************************************************Main Menu***********************************************
 		//--------------------------------------------Services------------------------------------------------
 		
 		CBEWebpages.Services(driver).click();
@@ -60,6 +83,7 @@ public void setUpTest()
 		
 			
 		//------------------------------------Show Catalogs & Reports-------------------------------------
+		
 		CBEWebpages.Show_Catalogs_And_Reports(driver).click();
 		System.out.println("Test Completed Successfully on clicking on Show Catalogs & Reports link");
 		
