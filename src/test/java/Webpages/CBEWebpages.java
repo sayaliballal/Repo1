@@ -10,10 +10,9 @@ import org.openqa.selenium.WebElement;
 
 import net.bytebuddy.asm.Advice.Exit;
 
-public class LoginPage{
+public class CBEWebpages{
 	
 	private static WebElement element = null;
-	private static WebDriver checkbox;
 	
 	public static WebElement loginpage_username(WebDriver driver) {
 		
@@ -35,6 +34,7 @@ public class LoginPage{
 		return element;
 	}
 	
+//******************************************************* CBE Order Process**********************************************************	
 	public static WebElement beginwithorder(WebDriver driver) {
 		
 		element = driver.findElement(By.linkText("Begin With Order"));
@@ -214,7 +214,7 @@ public class LoginPage{
 		return element;
 	}
 
-	/*//####################################### Payment Type_Credit Card ######################################### 
+	/*----------------------------------------Payment Type_Credit Card------------------------------------------------------------
 	public static WebElement CreditCardNumber(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"CC_NUM\"]"));
 		try {
@@ -261,7 +261,7 @@ public class LoginPage{
 	}
 	
 	*/
-		//############################################## Payment Type_Electronic Check ###########################################
+		//------------------------------------Payment Type_Electronic Check-------------------------------------------------------
 	public static WebElement ElectronicCheck(WebDriver driver) {
 		element = driver.findElement(By.xpath("/html/body/div[1]/div/form/fieldset[1]/ul/li/div/ul/li[2]/div/label/span/i"));
 		try {
@@ -283,8 +283,7 @@ public class LoginPage{
 		
 		return element;
 	}
-	
-	
+		
 	public static WebElement AccountNumber(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"ACH_ACCOUNT\"]"));
 		try {
@@ -295,8 +294,7 @@ public class LoginPage{
 		
 		return element;
 	}
-	
-	
+		
 	public static WebElement MakePayment(WebDriver driver) {
 		element = driver.findElement(By.xpath("/html/body/div[1]/div/form/fieldset[5]/ul/li/div/input[1]"));
 		try {
@@ -307,9 +305,8 @@ public class LoginPage{
 		
 		return element;
 	}
-	
-	 
-	 //################# To download Packing Slip ##################################
+		 
+	 //---------------------------------------To download Packing Slip---------------------------------------------------
 	 /*
 	public static WebElement PackingSlip(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"view_order\"]/p[3]/a[1]"));
@@ -322,8 +319,7 @@ public class LoginPage{
 		return element;
 	}
 	*/
-	 
-	
+	 	
 	public static WebElement PreviousOrder(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"my_accout_lt\"]/ul/li[7]/a"));
 		try {
@@ -336,8 +332,286 @@ public class LoginPage{
 	}
 	
 	
+	//****************************************************CBE My Account Section********************************************************
+	
+	public static WebElement MyAccount(WebDriver driver) {
+		element = driver.findElement(By.linkText("My Account"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement PreviousOrders(WebDriver driver) {
+		element = driver.findElement(By.linkText("Previous Orders"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+		
+	public static WebElement EditProfile(WebDriver driver) {
+		element = driver.findElement(By.linkText("Edit Profile"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement EditProfileCatalogInformation(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"frmEditProfile\"]/div[3]/table/tbody/tr/td[1]/span/div/ins"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement EditProfileSubmitbtn(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement ProfileUpdatedClickHereLink(WebDriver driver) {
+		element = driver.findElement(By.linkText("Click here"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement ManageTitles(WebDriver driver) {
+		element = driver.findElement(By.linkText("Manage Titles"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement ManageTitlesNextPagination(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Display_Rates\"]/form/div[8]/ul/ul/li[3]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+		
+	public static WebElement ManageTitlesLastPagination(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Display_Rates\"]/form/div[8]/ul/ul/li[6]/a/i"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement EditBookTitle(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"test\"]/tbody/tr[2]/td[6]/a[1]/i"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement UpdateTitle(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"txtAwards\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement SelectCheckboxforBuyFrom(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"EditbooktitleForm\"]/div[31]/div/div/table/tbody/tr/td[1]/div/ins"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement SaveChangesbtn(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+		
+	public static WebElement Pricing(WebDriver driver) {
+		element = driver.findElement(By.linkText("Pricing"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+		
+	public static WebElement Pricing_Non_Member_Rates(WebDriver driver) {
+		element = driver.findElement(By.linkText("NON MEMBER RATES"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+		
+	public static WebElement Advertising(WebDriver driver) {
+		element = driver.findElement(By.linkText("Advertising"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+
+	public static WebElement Advertising_Select_Show_Checkbox(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"frmAdvertisement\"]/table/tbody/tr[1]/td[1]/div/ins"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Add_Catalog_Advertising_to_Order(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"add_advertisement\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement AutographingSlot(WebDriver driver) {
+		element = driver.findElement(By.linkText("Autographing Slot"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Select_Show_for_Autographing_Slot(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"form1\"]/table/tbody/tr[1]/td[1]/div/ins"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Slot_Selection_And_Confirm_button(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"add_auto_graph_slot\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	
+	public static WebElement FeaturedTitle(WebDriver driver) {
+		element = driver.findElement(By.linkText("Featured Title in Newsletter to 30 thousand Librarians"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement MemberBenefits(WebDriver driver) {
+		element = driver.findElement(By.linkText("Member Benefits"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Logout(WebDriver driver) {
+		element = driver.findElement(By.linkText("Logout"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Trade_show_Schedule(WebDriver driver) {
+		element = driver.findElement(By.linkText("Trade show Schedule"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
 	
 	}
+
 
 
 

@@ -10,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Webpages.LoginPage;
+import Webpages.CBEWebpages;
 
 public class CBEOrderProcess {
 	
@@ -30,7 +30,7 @@ public void setUpTest(){
 	}
 	
 	/*@BeforeTest
-    public void beforeTest() {  
+    /*public void beforeTest() {  
        String exePath = "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32(1)\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", exePath);
         driver = new ChromeDriver();  
@@ -38,106 +38,106 @@ public void setUpTest(){
     } */
 	
 	@Test
-public void loginpage() {
+public void CBEWebpages() {
 		
-		LoginPage.loginpage_username(driver).sendKeys("cbetest1@gmail.com");
+		CBEWebpages.loginpage_username(driver).sendKeys("cbetest1@gmail.com");
 		System.out.println("Test Completed Successfully for username");
 		
-		LoginPage.loginpage_password(driver).sendKeys("123456789");
+		CBEWebpages.loginpage_password(driver).sendKeys("123456789");
 		System.out.println("Test Completed Successfully for password");
 		
-		LoginPage.loginpage_loginbtn(driver).sendKeys(Keys.RETURN);
+		CBEWebpages.loginpage_loginbtn(driver).sendKeys(Keys.RETURN);
 		System.out.println("Test Completed Successfully for loginbtn");
 		
-		LoginPage.beginwithorder(driver).click();
+		CBEWebpages.beginwithorder(driver).click();
 		System.out.println("Test Completed Successfully for begin with order");
 		
-		LoginPage.selectregisterforbookfairs(driver).click();	
+		CBEWebpages.selectregisterforbookfairs(driver).click();	
 		System.out.println("Test Completed Successfully for selectregisterforbook");
 							
-		LoginPage.selectregister_continuebtn(driver).click();
+		CBEWebpages.selectregister_continuebtn(driver).click();
 		System.out.println("Test Completed Successfully for continue button");	
 
-       LoginPage.show_checkbox3(driver).click();
+		CBEWebpages.show_checkbox3(driver).click();
        System.out.println("Test Completed Successfully for select checkbox3");
        
-       LoginPage.show_continuebtn(driver).click();
+       CBEWebpages.show_continuebtn(driver).click();
        System.out.println("Test Completed Successfully for Show_countinebtn");    
        
-       LoginPage.selectexistingtitle(driver).click();
+       CBEWebpages.selectexistingtitle(driver).click();
        System.out.println("Test Completed Successfully for Select Existing Title");  
        
-       LoginPage.selecttitlefromddl(driver).click();
+       CBEWebpages.selecttitlefromddl(driver).click();
        System.out.println("Test Completed Successfully for Select Existing Title from DDL");  
        
-       LoginPage.titleTandC(driver).click();
+       CBEWebpages.titleTandC(driver).click();
        System.out.println("Test Completed Successfully for Title page_Terms and Conditions");
        
-       LoginPage.titlepagecontinuebtn(driver).click();
+       CBEWebpages.titlepagecontinuebtn(driver).click();
        System.out.println("Test Completed Successfully for Title page_continue button");
        /*
-       LoginPage.AddOnServices(driver).click();
+       CBEWebpages.AddOnServices(driver).click();
        System.out.println("Test Completed Successfully for Add-on Services");
        */
        /*
-       LoginPage.SelectNewsletterMonthAndYear(driver).click();
+       CBEWebpages.SelectNewsletterMonthAndYear(driver).click();
        System.out.println("est Completed Successfully for Select Newsletter Month And Year");
        */
-       LoginPage.ContinueRegistration(driver).click();
+       CBEWebpages.ContinueRegistration(driver).click();
        System.out.println("Test Completed Successfully for Continue Registration");
        
-       LoginPage.PubDetailspage(driver).click();
+       CBEWebpages.PubDetailspage(driver).click();
        System.out.println("Test Completed Successfully for checkbox selection of 'Same As Publisher Details'");
        
-       LoginPage.OrderPreviewAndConfirmProcessOrder(driver).click();
+       CBEWebpages.OrderPreviewAndConfirmProcessOrder(driver).click();
        System.out.println("Test Completed Successfully for Process order");
                  
        
-       LoginPage.PreviewDetailsPage(driver).click();
+       CBEWebpages.PreviewDetailsPage(driver).click();
        System.out.println("Test Completed Successfully checkbox selection of 'I have reviewed the content and approve the information provided here.'");
        
        
-       LoginPage.PreviewDetailsContinueButton(driver).click();
+       CBEWebpages.PreviewDetailsContinueButton(driver).click();
        System.out.println("Test Completed Successfully for Preview Details Continue button");
         
       /*  
        //********************************Payment Type_Credit Card ******************************************************* 
-       LoginPage.CreditCardNumber(driver).sendKeys("4111111111111111");
+       CBEWebpages.CreditCardNumber(driver).sendKeys("4111111111111111");
        System.out.println("Test Completed Successfully entering for credit card number");
        
-       LoginPage.CVV2(driver).sendKeys("123");
+       CBEWebpages.CVV2(driver).sendKeys("123");
        System.out.println("Test Completed Successfully for entering CVV2 number");
        
-       LoginPage.ExpirationMonth(driver).sendKeys("02");
+       CBEWebpages.ExpirationMonth(driver).sendKeys("02");
        System.out.println("Test Completed Successfully for selecting expiration month");
        
-       LoginPage.ExpirationYear(driver).sendKeys("05");
+       CBEWebpages.ExpirationYear(driver).sendKeys("05");
        System.out.println("Test Completed Successfully for selecting expiration month");
        
       */   
        
      //**********************************************Payment Type_Electronic Check**********************************
-       LoginPage.ElectronicCheck(driver).click();
+       CBEWebpages.ElectronicCheck(driver).click();
        System.out.println("Test Completed Successfully for Electronic Check");
        
        
-       LoginPage.RoutingNumber(driver).sendKeys("123123123");
+       CBEWebpages.RoutingNumber(driver).sendKeys("123123123");
        System.out.println("Test Completed Successfully for entering routing number");
        
-       LoginPage.AccountNumber(driver).sendKeys("123456789");
+       CBEWebpages.AccountNumber(driver).sendKeys("123456789");
        System.out.println("Test Completed Successfully for entering accounting number");
        
-       LoginPage.MakePayment(driver).click();
+       CBEWebpages.MakePayment(driver).click();
        System.out.println("Test Completed Successfully on clicking Make Payment button");
        
         
        //******************************************To download Packing Slip*************************************
        /*
-       LoginPage.PackingSlip(driver).click();
+       CBEWebpages.PackingSlip(driver).click();
        System.out.println("Test Completed Successfully on clicking on Packing Slip");
        */
   
-       LoginPage.PreviousOrder(driver).click();
+       CBEWebpages.PreviousOrder(driver).click();
        System.out.println("Test Completed Successfully for Previous Order");
        
        
