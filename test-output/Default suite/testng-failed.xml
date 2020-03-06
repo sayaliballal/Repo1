@@ -5,6 +5,7 @@
     <classes>
       <class name="Test.CBEMenuBarSection">
         <methods>
+          <include name="tearDownTest"/>
           <include name="setUpTest"/>
           <include name="CBEWebpages"/>
         </methods>
