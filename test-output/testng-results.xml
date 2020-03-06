@@ -2,36 +2,56 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="216086" started-at="2020-03-04T12:02:18Z" finished-at="2020-03-04T12:05:54Z">
+  <suite name="Default suite" duration-ms="67314" started-at="2020-03-06T08:06:06Z" finished-at="2020-03-06T08:07:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="216086" started-at="2020-03-04T12:02:18Z" finished-at="2020-03-04T12:05:54Z">
-      <class name="Test.CBEMyAccountSection">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Test.CBEMyAccountSection@66a3ffec]" name="setUpTest" is-config="true" duration-ms="16572" started-at="2020-03-04T12:02:18Z" finished-at="2020-03-04T12:02:35Z">
+    <test name="Default test" duration-ms="67314" started-at="2020-03-06T08:06:06Z" finished-at="2020-03-06T08:07:14Z">
+      <class name="Test.CBEMenuBarSection">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Test.CBEMenuBarSection@3e6fa38a]" name="setUpTest" is-config="true" duration-ms="14364" started-at="2020-03-06T08:06:06Z" finished-at="2020-03-06T08:06:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="FAIL" signature="CBEWebpages()[pri:0, instance:Test.CBEMyAccountSection@66a3ffec]" name="CBEWebpages" duration-ms="199402" started-at="2020-03-04T12:02:35Z" finished-at="2020-03-04T12:05:54Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="CBEWebpages()[pri:0, instance:Test.CBEMenuBarSection@3e6fa38a]" name="CBEWebpages" duration-ms="52908" started-at="2020-03-06T08:06:21Z" finished-at="2020-03-06T08:07:14Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[Cannot locate an element using link text=My Account
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression ////*[@id="catalogs_reports"]/div[1]/a[2]/span because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="catalogs_reports"]/div[1]/a[2]/span' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PS794016', ip: '192.168.3.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2572d3dc7062925bc0ba93b180d2d82f
+*** Element info: {Using=xpath, value=////*[@id="catalogs_reports"]/div[1]/a[2]/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using link text=My Account
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression ////*[@id="catalogs_reports"]/div[1]/a[2]/span because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="catalogs_reports"]/div[1]/a[2]/span' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PS794016', ip: '192.168.3.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SAYALI~1.BAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2572d3dc7062925bc0ba93b180d2d82f
+*** Element info: {Using=xpath, value=////*[@id="catalogs_reports"]/div[1]/a[2]/span}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at Webpages.CBEWebpages.MyAccount(CBEWebpages.java:338)
-at Test.CBEMyAccountSection.CBEWebpages(CBEMyAccountSection.java:124)
+at Webpages.CBEWebpages.View_2021_Catalogs_And_Reports(CBEWebpages.java:693)
+at Test.CBEMenuBarSection.CBEWebpages(CBEMenuBarSection.java:61)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -59,15 +79,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CBEWebpages -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Test.CBEMyAccountSection@66a3ffec]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2020-03-04T12:05:54Z" finished-at="2020-03-04T12:05:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- Test.CBEMyAccountSection -->
+      </class> <!-- Test.CBEMenuBarSection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

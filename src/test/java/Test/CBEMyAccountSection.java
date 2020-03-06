@@ -148,11 +148,12 @@ public void CBEWebpages() {
 	CBEWebpages.MyAccount(driver).click();
 	System.out.println("Test Completed Successfully on clicking on My Account link");
 	
+	//-----------------------------------Log Out-----------------------------------
 	CBEWebpages.Logout(driver).click();
 	System.out.println("Test Completed Successfully on clicking on Logout link'");
 	
 	
-	//------------------------------Trade Show Schedule page------------------------------
+	//------------------------------Login and check Trade Show Schedule page------------------------------
 	CBEWebpages.loginpage_username(driver).sendKeys("cbetest1@gmail.com");
 	System.out.println("Test Completed Successfully for username");
 	
@@ -165,7 +166,6 @@ public void CBEWebpages() {
 	CBEWebpages.Trade_show_Schedule(driver).click();
 	System.out.println("Test Completed Successfully on clicking on Trade show Schedule link");
 		
-
 }
 
 

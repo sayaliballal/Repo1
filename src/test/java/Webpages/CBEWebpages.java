@@ -610,6 +610,140 @@ public class CBEWebpages{
 		return element;
 	}
 	
+	
+	public static WebElement Book_Shows(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Register_act\"]/header/div[2]/div/div[2]/nav/ul/li[4]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement BookShows_ShowPastShows(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Display_Rates\"]/div[2]/div[1]/div/ins"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	 
+	public static WebElement ShowName(WebDriver driver) {
+		element = driver.findElement(By.linkText("2020 London Book Fair New Title Showcase"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Display_Rates(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-5930\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	
+	public static WebElement Display_Rates_2020_NON_MEMBER_RATES(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Display_Rates\"]/ul/li[2]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Show_Catalogs_And_Reports(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menu-item-5932\"]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement View_2019_Catalogs_And_Reports(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[1]/a[1]/span"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement View_2021_Catalogs_And_Reports(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[1]/a[2]/span"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement View_2020_Catalogs_And_Reports(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[1]/a[1]/span")); 
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Show_Catalogs_And_Reports_Show_Name(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[3]/table/tbody/tr[12]/td[1]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement eBook_Catalog(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[3]/table/tbody/tr[12]/td[3]/div[1]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
+	public static WebElement Online_Catalog(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[3]/table/tbody/tr[12]/td[3]/div[2]/a"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+	}
+	
 	}
 
 
