@@ -13,7 +13,7 @@ WebDriver driver = null;
 	@BeforeTest
 public void setUpTest()
 	 {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32 (2)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32 (1)\\chromedriver2.exe");
 		driver = new ChromeDriver();
 		driver.get("https://alpha.combinedbook.com/");
 		driver.manage().window().maximize();
@@ -102,6 +102,7 @@ public void setUpTest()
 		CBEWebpages.Show_Catalogs_And_Reports(driver).click();
 		System.out.println("Test Completed Successfully on clicking on Show Catalogs & Reports link");
 		
+		/*
 		CBEWebpages.eBook_Catalog(driver).click();
 		System.out.println("Test Completed Successfully on clicking on eBook Catalog button");
 		
@@ -116,10 +117,11 @@ public void setUpTest()
 		
 		CBEWebpages.PDF_Catalog(driver).click();
 		System.out.println("Test Completed Successfully on clicking on Show Catalogs & Reports link");
-		
+		*/
+		/*
 		CBEWebpages.ViewAlbum(driver).click();
 		System.out.println("Test Completed Successfully on clicking on View Album link");
-		
+		*/
 	}
 	
 	

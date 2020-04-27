@@ -174,6 +174,18 @@ public class CBEWebpages{
 		return element;
 	}
 	
+	public static WebElement StreetAddress(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"street\"]"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();}
+		
+		return element;
+		
+	}
+	
 	public static WebElement OrderPreviewAndConfirmProcessOrder(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"SubmitBtn\"]"));
 		try {
@@ -301,7 +313,7 @@ public class CBEWebpages{
 	}
 		 
 	 //---------------------------------------To download Packing Slip---------------------------------------------------
-	 /*
+	 
 	public static WebElement PackingSlip(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"view_order\"]/p[3]/a[1]"));
 		try {
@@ -312,7 +324,7 @@ public class CBEWebpages{
 		
 		return element;
 	}
-	*/
+	
 	 	
 	public static WebElement PreviousOrder(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"my_accout_lt\"]/ul/li[7]/a"));
@@ -626,7 +638,7 @@ public class CBEWebpages{
 	}
 	 
 	public static WebElement ShowName(WebDriver driver) {
-		element = driver.findElement(By.linkText("2020 London Book Fair New Title Showcase"));
+		element = driver.findElement(By.linkText("2020 Bologna Children's Book Fair"));
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -830,6 +842,7 @@ public class CBEWebpages{
 	
 	public static WebElement eBook_Catalog(WebDriver driver) {
 		element = driver.findElement(By.xpath("//*[@id=\"catalogs_reports\"]/div[3]/table/tbody/tr[1]/td[3]/div[1]/a"));
+		                                       
 		try {
 			Thread.sleep(9000);
 		} catch (InterruptedException e) {

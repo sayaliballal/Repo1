@@ -20,7 +20,7 @@ public class CBEMyAccountSection {
 public void setUpTest(){
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32 (2)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32 (1)\\chromedriver2.exe");
 		driver = new ChromeDriver();
 		driver.get("https://alpha.combinedbook.com/");
 		driver.manage().window().maximize();
@@ -173,8 +173,8 @@ public void CBEWebpages() {
 public void tearDownTest() {
 		
 		
-		//driver.close();
-		//driver.quit();
+		driver.close();
+		driver.quit();
 		System.out.println("Test Completed Successfully...");
 	}	
 }

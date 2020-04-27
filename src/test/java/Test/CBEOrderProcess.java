@@ -23,7 +23,8 @@ public class CBEOrderProcess {
 public void setUpTest(){
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32 (2)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sayali.ballal\\eclipse-workspaceProjects\\CombinedBookExhibit\\Drivers\\chromedriver\\chromedriver_win32 (1)\\chromedriver2.exe");
+		                                               
 		driver = new ChromeDriver();
 		driver.get("https://alpha.combinedbook.com/");
 		driver.manage().window().maximize();
@@ -89,6 +90,9 @@ public void CBEWebpages() {
        CBEWebpages.PubDetailspage(driver).click();
        System.out.println("Test Completed Successfully for checkbox selection of 'Same As Publisher Details'");
        
+       CBEWebpages.StreetAddress(driver).sendKeys("abc");
+       System.out.println("Test Completed Successfully for Street Address");
+       
        CBEWebpages.OrderPreviewAndConfirmProcessOrder(driver).click();
        System.out.println("Test Completed Successfully for Process order");
                  
@@ -132,14 +136,15 @@ public void CBEWebpages() {
        
         
        //******************************************To download Packing Slip*************************************
-       /*
+       
        CBEWebpages.PackingSlip(driver).click();
        System.out.println("Test Completed Successfully on clicking on Packing Slip");
-       */
+       
   
+       /*
        CBEWebpages.PreviousOrder(driver).click();
        System.out.println("Test Completed Successfully for Previous Order");
-       
+       */
        
 	} 
 	 
